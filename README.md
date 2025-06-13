@@ -1,4 +1,7 @@
 # 🚀 Jenkins Cluster in Docker Container & Kubernetes Pod
+### Project Objective
+
+Create a Jenkins Cluster setup from scratch without using any pre-built Jenkins images. The goal is to manually install Jenkins in a custom Docker image, deploy Jenkins master and agent as Kubernetes Pods, and run CI/CD pipelines using this infrastructure.
 
 ## 📌 Objective
 To build a complete **Jenkins CI/CD Cluster** using:
@@ -14,14 +17,13 @@ To build a complete **Jenkins CI/CD Cluster** using:
 ---
 jenkins-k8s-cluster/
 ├── jenkins-master/
-│ └── Dockerfile
+│   └── Dockerfile
 ├── jenkins-agent/
-│ ├── Dockerfile
+│   ├── Dockerfile
 ├── k8s-yamls/
-│ ├── jenkins-master-deployment.yaml
-│ ├── jenkins-agent-deployment.yaml
-│ └── jenkins-service.yaml
-
+│   ├── jenkins-master-deployment.yaml
+│   ├── jenkins-agent-deployment.yaml
+│   └── jenkins-service.yaml
 ---
 ---
 
