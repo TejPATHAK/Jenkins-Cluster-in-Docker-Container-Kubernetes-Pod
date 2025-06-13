@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: jenkins-agent
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      role: jenkins-agent
+  template:
+    metadata:
+      labels:
+        role: jenkins-agent
+    spec:
+      containers:
+      - name: agent
+        image: tpathak21/jenkins-agent:manual
+        command: ["sleep"]
+        args: ["infinity"]
+
