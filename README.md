@@ -11,6 +11,7 @@ To build a complete **Jenkins CI/CD Cluster** using:
 
 ## 📦 Project Structure
 
+---
 jenkins-k8s-cluster/
 ├── jenkins-master/
 │ └── Dockerfile
@@ -21,7 +22,7 @@ jenkins-k8s-cluster/
 │ ├── jenkins-agent-deployment.yaml
 │ └── jenkins-service.yaml
 
-
+---
 ---
 
 ## 🛠️ Setup Overview
